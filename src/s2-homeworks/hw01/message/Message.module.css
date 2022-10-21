@@ -1,31 +1,39 @@
 .message {
-
+    /*background-color: #37f6f0;*/
+    /*border: 1px solid;*/
 }
 
 .imageAndText {
-
+    /*background-color: #93f36f;*/
+    /*border: 1px solid;*/
 }
 
 .imageAndText img {
-
+    /*background-color: #d673ee;*/
+    /*border: 1px solid;*/
 }
 
 .text {
-
+    /*background-color: #eec597;*/
+    /*border: 1px solid;*/
 }
 
 .text:after {
-
+    /*background-color: #e5cd0a;*/
+    /*border: 1px solid;*/
 }
 
 .name {
-
+    /*background-color: #c30be0;*/
+    /*border: 1px solid;*/
 }
 
 .messageText {
-
+    /*background-color: #ee62a8;*/
+    /*border: 1px solid;*/
 }
 
 .time {
-
+    /*background-color: #c78def;*/
+    /*border: 1px solid;*/
 }
