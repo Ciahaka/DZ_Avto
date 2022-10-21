@@ -4,8 +4,14 @@
 
 .hw {
 
+
 }
 
 .hwTitle {
-
+    background-color: #DDEEFF;
+    border: 1px solid;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    text-align: justify-all;
 }
