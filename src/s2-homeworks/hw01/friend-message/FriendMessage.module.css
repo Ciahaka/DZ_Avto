@@ -1,5 +1,5 @@
 .friendMessage {
-
+/*border: 1px solid;*/
 }
 
 .friendImageAndText {
@@ -7,11 +7,11 @@
 }
 
 .friendImageAndText img {
-
+height: 50px;
 }
 
 .friendText {
-
+;
 }
 
 .friendText:after {
