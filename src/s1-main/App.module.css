@@ -4,14 +4,19 @@
 
 .hw {
 
+    margin: 10px;
 
 }
 
 .hwTitle {
-    background-color: #DDEEFF;
-    border: 1px solid;
+    margin: 10px;
+    height: 70px;
     font-size: larger;
     font-weight: bold;
     display: flex;
-    text-align: justify-all;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+
 }
