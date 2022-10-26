@@ -4,6 +4,7 @@ import MessageSender from './message-sender/MessageSender'
 import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
+import avatarr from './avatarr.png'
 
 /*
 * 1 - описать тип MessageType
@@ -15,57 +16,58 @@ import avatar from './avatar.png'
 
 // нужно создать правильный тип вместо any
 export type MessageType = {
-    id:number
-    user:{
-        avatar:string
-        name:string
-    }
-    message:{
-        text:string
-        time:string
-    }
+  id: number
+  user: {
+    avatar: string
+    name: string
+  }
+  message: {
+    text: string
+    time: string
+  }
 }
 
 // структуру объекта не менять
 export const message0: MessageType = {
-    id: 0,
-    user: {
-        avatar: avatar, // можно менять
-        name: 'Kolas',  // можно менять
-    },
-    message: {
-        text: 'Просыпается как-то Якуб Колас с лёгкого подпития, а у него на кухне сидят Янка Купала, Янка Мавр....', // можно менять
-        time: '10:00', // можно менять
-    },
+  id: 0,
+  user: {
+    avatar: avatar, // можно менять
+    name: 'Kolas',  // можно менять
+  },
+  message: {
+    text: 'Просыпается как-то Якуб Колас с лёгкого подпития, а у него на кухне сидят Янка Купала, Янка Мавр....', // можно менять
+    time: '10:00', // можно менять
+  },
 }
 export const friendMessage0: MessageType = {
-    id: 100,
-    user: {
-        avatar: avatar, // можно менять
-        name: 'Kalinovski', // можно менять
-    },
-    message: {
-        text: 'A! Знаю! ....Янка Брыль. Якуб посмотрел на них и говорит:"Янки, гоу хоум!"', // можно менять
-        time: '10:22', // можно менять
-    },
+  id: 100,
+  user: {
+    avatar: avatarr, // можно менять
+    name: 'Franciszak', // можно менять
+  },
+  message: {
+    text: 'A! Знаю! ....Янка Брыль. Якуб посмотрел на них и говорит:"Янки, гоу хоум!"', // можно менять
+    time: '10:22', // можно менять
+  },
 }
 
 const HW1 = () => {
-    return (
-        <div id={'hw1'}>
-            <div className={s2.hwTitle}>Homework #1</div>
-            <div className={s2.hw}>
-                {/*проверка отображения (не менять)*/}
-                <div>
-                    <Message message={message0} />
-                    <FriendMessage message={friendMessage0} />
-                </div>
-
-                {/*для автоматической проверки дз (не менять)*/}
-                <MessageSender M={Message} />
-            </div>
+  return (
+    <div id={'hw1'}>
+      <div className={s2.hwTitle}>Homework #1</div>
+      <hr></hr>
+      <div className={s2.hw}>
+        {/*проверка отображения (не менять)*/}
+        <div>
+          <Message message={message0}/>
+          <FriendMessage message={friendMessage0}/>
         </div>
-    )
+
+        {/*для автоматической проверки дз (не менять)*/}
+        <MessageSender M={Message}/>
+      </div>
+    </div>
+  )
 }
 
 export default HW1
