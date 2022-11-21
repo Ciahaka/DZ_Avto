@@ -23,7 +23,7 @@ export type AffairType = {
   name: string
   priority: AffairPriorityType
 }
-export type FilterType = 'all' | AffairPriorityType
+export type  FilterType = 'all' | AffairPriorityType
 
 // constants
 const defaultAffairs: Array<AffairType> = [
@@ -32,20 +32,23 @@ const defaultAffairs: Array<AffairType> = [
   {_id: 3, name: 'games', priority: 'low'},
   {_id: 4, name: 'work', priority: 'high'},
   {_id: 5, name: 'html & css', priority: 'middle'},
+  {_id: 6, name: 'go to sleep', priority: 'high'},
+
 ]
 
 // pure helper functions
 export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => {
-  if (filter === 'high') {
-    return affairs.filter(a => a.priority === 'high')
-  }
-  if (filter === 'middle') {
-    return affairs.filter(a => a.priority === 'middle')
-  }
-  if (filter === 'low') {
-    return affairs.filter(a => a.priority === 'low')
-  }
-  return affairs
+  return filter === 'all' ? affairs : affairs.filter(a => a.priority === filter)
+  // if (filter === 'high') {
+  //   return affairs.filter(a => a.priority === 'high')
+  // }
+  // if (filter === 'middle') {
+  //   return affairs.filter(a => a.priority === 'middle')
+  // }
+  // if (filter === 'low') {
+  //   return affairs.filter(a => a.priority === 'low')
+  // }
+  // return affairs
 }
 export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => {
 
