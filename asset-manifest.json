@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/DZ_Avto/static/css/main.33b4312e.css",
-    "main.js": "/DZ_Avto/static/js/main.ed8f6f96.js",
+    "main.js": "/DZ_Avto/static/js/main.981a2017.js",
     "static/js/787.e864fbde.chunk.js": "/DZ_Avto/static/js/787.e864fbde.chunk.js",
     "static/media/avatarr.png": "/DZ_Avto/static/media/avatarr.54619274f78a9da99a9f.png",
     "static/media/avatar.png": "/DZ_Avto/static/media/avatar.7f2a2aae2b3b1ca291d8.png",
     "index.html": "/DZ_Avto/index.html",
     "main.33b4312e.css.map": "/DZ_Avto/static/css/main.33b4312e.css.map",
-    "main.ed8f6f96.js.map": "/DZ_Avto/static/js/main.ed8f6f96.js.map",
+    "main.981a2017.js.map": "/DZ_Avto/static/js/main.981a2017.js.map",
     "787.e864fbde.chunk.js.map": "/DZ_Avto/static/js/787.e864fbde.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33b4312e.css",
-    "static/js/main.ed8f6f96.js"
+    "static/js/main.981a2017.js"
   ]
 }
