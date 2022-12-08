@@ -11,13 +11,17 @@ type AffairsPropsType = {
 }
 
 function Affairs(props: AffairsPropsType) {
+
     const setAll = () => {
+
         {props.setFilter('all')}
     }
     const setHigh = () => {
+
         {props.setFilter('high')}
     }
     const setMiddle = () => {
+
         {props.setFilter('middle')}
     }
     const setLow = () => {
@@ -40,6 +44,7 @@ function Affairs(props: AffairsPropsType) {
     return (
         <div>
             <div className={s.buttonContainer}>
+
                 <button
                     id={'hw2-button-all'}
                     onClick={setAll}
@@ -69,6 +74,8 @@ function Affairs(props: AffairsPropsType) {
                     Low
                 </button>
             </div>
+
+
             <div className={s.affairs}>{mappedAffairs}</div>
         </div>
     )
